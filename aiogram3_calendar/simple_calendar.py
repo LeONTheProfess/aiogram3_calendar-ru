@@ -67,8 +67,12 @@ class SimpleCalendar:
                 if day == 0:
                     calendar_row.append(InlineKeyboardButton(text=" ", callback_data=ignore_callback.pack()))
                     continue
+                # Выделяем текущую дату
+                buttonText = str(day)
+                if(day == datetime.now().day and month == datetime.now().month and year == datetime.now().year):
+                    buttonText = f'[{day}]'
                 calendar_row.append(InlineKeyboardButton(
-                    text=str(day),
+                    text=buttonText,
                     callback_data=SimpleCalendarCallback(act=SimpleCalendarAction.DAY, year=year, month=month, day=day).pack()
                 ))
             markup.append(calendar_row)
