@@ -3,8 +3,8 @@ from unittest.mock import AsyncMock
 
 import pytest
 
-from aiogram3_calendar import DialogCalendar
-from aiogram3_calendar.calendar_types import DialogCalendarAction, DialogCalendarCallback
+from aiogram3_calendar_ru import DialogCalendar
+from aiogram3_calendar_ru.calendar_types import DialogCalendarAction, DialogCalendarCallback
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 

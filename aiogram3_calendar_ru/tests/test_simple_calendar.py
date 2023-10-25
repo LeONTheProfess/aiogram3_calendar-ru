@@ -4,8 +4,8 @@ from unittest.mock import AsyncMock
 
 import pytest
 
-from aiogram3_calendar import SimpleCalendar
-from aiogram3_calendar.calendar_types import SimpleCalendarAction, SimpleCalendarCallback
+from aiogram3_calendar_ru import SimpleCalendar
+from aiogram3_calendar_ru.calendar_types import SimpleCalendarAction, SimpleCalendarCallback
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 

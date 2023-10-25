@@ -5,10 +5,10 @@ from datetime import datetime, timedelta
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters.callback_data import CallbackData
 from aiogram.types import CallbackQuery
-from aiogram3_calendar.calendar_types import SimpleCalendarCallback, SimpleCalendarAction, WEEKDAYS
+from aiogram3_calendar_ru.calendar_types import SimpleCalendarCallback, SimpleCalendarAction, WEEKDAYS
 
 
-locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
+#locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
 
 
 class SimpleCalendar:
