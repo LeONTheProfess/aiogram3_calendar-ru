@@ -24,7 +24,7 @@ class DialogCalendar:
         markup = [[  # first row - years
 
             InlineKeyboardButton(
-                text=value,
+                text=str(value),
                 callback_data=DialogCalendarCallback(
                     act=DialogCalendarAction.SET_YEAR,
                     year=value,
@@ -54,7 +54,7 @@ class DialogCalendar:
 
             InlineKeyboardButton(text=" ", callback_data=ignore_callback.pack()),
             InlineKeyboardButton(
-                text=year,
+                text=str(year),
                 callback_data=DialogCalendarCallback(act=DialogCalendarAction.START, year=year, month=-1, day=-1).pack()
             ),
             InlineKeyboardButton(text=" ", callback_data=ignore_callback.pack()),
@@ -79,7 +79,7 @@ class DialogCalendar:
     async def _get_days_kb(self, year: int, month: int):
         markup = [[
             InlineKeyboardButton(
-                text=year,
+                text=str(year),
                 callback_data=DialogCalendarCallback(act=DialogCalendarAction.START, year=year, month=-1, day=-1).pack()
             ),
             InlineKeyboardButton(
