@@ -7,12 +7,14 @@ Navigation calendar - user can either select a date or move to the next or previ
 Dialog calendar - user selects year on first stage, month on next stage, day on last stage
 
 ## Usage
-Install package
+1. Clone this repo into your project;
+2. 
+```python  
+from aiogram3_calendar_ru import simple_cal_callback, SimpleCalendar, dialog_cal_callback, DialogCalendar 
+```
 
-        pip install aiogram3_calendar
-
-A full working example on how to use aiogram-calendar is provided in *bot_example.py*. 
-You create a calendar and add it to a message with a *reply_markup* parameter and then you can process it in a callbackqueyhandler method using the *process_selection* method.
+A full working example on how to use aiogram-calendar is provided in *example_bot.py*. 
+You create a calendar and add it to a message with a *reply_markup* parameter and then you can process it in a ```callback_query``` method using the *process_selection* method.
 
 ## Gif demo:
 
